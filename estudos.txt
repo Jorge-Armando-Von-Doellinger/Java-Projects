@@ -1,0 +1,5 @@
+ORM - Tipo EF (cria o database a poartir de uma entidade)
+JPA - C
+Spring - melhor q o DI do c#
+
+Aprender sobre java Security (JWT)

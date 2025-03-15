@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <module name="Checker">
+        <!-- Regras de tabulação -->
+        <module name="FileTabCharacter"/>
+
+        <!-- Regras de espaçamento entre linhas -->
+        <module name="EmptyLineSeparator">
+            <property name="lineCount" value="1"/>
+        </module>
+
+        <!-- Convenção de nomes -->
+        <module name="NamingConvention">
+            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
+        </module>
+
+        <!-- Regras de indentação -->
+        <module name="Indentation">
+            <property name="basicOffset" value="4"/>
+            <property name="lineWrappingIndentation" value="8"/>
+        </module>
+
+        <!-- Regras de comentários Javadoc -->
+        <module name="JavadocMethod">
+            <property name="minLines" value="1"/>
+        </module>
+
+        <!-- Limite de tamanho para métodos -->
+        <module name="MethodLength">
+            <property name="max" value="80"/>
+        </module>
+
+        <!-- Limite de tamanho para o arquivo -->
+        <module name="FileLength">
+            <property name="max" value="1000"/>
+        </module>
+
+        <!-- Limite de tamanho de linha -->
+        <module name="LineLength">
+            <property name="max" value="120"/>
+        </module>
+    </module>
+</configuration>
