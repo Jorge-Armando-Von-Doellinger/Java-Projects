@@ -26,12 +26,21 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
+
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.3.0")
+
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
 	runtimeOnly("org.postgresql:postgresql")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+}
+
+tasks.jar {
+	manifest {
+		attributes["Main-Class"] = "me.dio.santander_dev_week_2023_dio.SantanderDevWeek2023DioApplication"
+	}
 }
 
 tasks.withType<Test> {

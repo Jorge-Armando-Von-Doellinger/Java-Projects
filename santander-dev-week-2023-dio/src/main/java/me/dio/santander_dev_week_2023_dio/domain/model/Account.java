@@ -1,7 +1,9 @@
-package me.dio.santander_dev_week_2023_dio.model;
+package me.dio.santander_dev_week_2023_dio.domain.model;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 
@@ -14,8 +16,8 @@ public class Account {
     @Column(unique = true)
     private String number;
     private String agency;
-    @Column(scale = 13, precision = 2)
+    @Column(precision = 13, scale = 2)
     private BigDecimal balance;
-    @Column(scale = 13, precision = 2, name = "account_limit")
+    @Column(precision = 13, scale = 2, name = "account_limit")
     private BigDecimal limit;
 }

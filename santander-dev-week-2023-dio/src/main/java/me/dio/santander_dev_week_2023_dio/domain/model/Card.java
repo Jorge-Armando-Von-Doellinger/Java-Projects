@@ -1,7 +1,9 @@
-package me.dio.santander_dev_week_2023_dio.model;
+package me.dio.santander_dev_week_2023_dio.domain.model;
 
 import jakarta.persistence.*;
+import lombok.AccessLevel;
 import lombok.Data;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 
